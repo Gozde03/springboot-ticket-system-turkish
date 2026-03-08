@@ -115,19 +115,9 @@ The testing process followed the **Software Testing Life Cycle (STLC)**:
 src
 ├── main
 │   ├── java
-│   │   └── com/example
-│   │       ├── controller
-│   │       ├── service
-│   │       ├── repository
-│   │       └── entity
 │   └── resources
 │       ├── static
-│       │   ├── css
-│       │   ├── js
-│       │   └── img
 │       └── templates
-│           ├── layout
-│           └── pages
 └── test
 ```
 ## Limitations
