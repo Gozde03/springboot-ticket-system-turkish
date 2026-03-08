@@ -110,9 +110,16 @@ The testing process followed the **Software Testing Life Cycle (STLC)**:
 6. Test Closure
 
 ## Project Structure
+
+```
 src
 ├── main
 │   ├── java
+│   │   └── com/example
+│   │       ├── controller
+│   │       ├── service
+│   │       ├── repository
+│   │       └── entity
 │   └── resources
 │       ├── static
 │       │   ├── css
@@ -122,6 +129,7 @@ src
 │           ├── layout
 │           └── pages
 └── test
+```
 ## Limitations
 
 Due to project scope limitations, the following tests were not fully implemented:
