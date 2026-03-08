@@ -122,7 +122,6 @@ src
 │           ├── layout
 │           └── pages
 └── test
-
 ## Limitations
 
 Due to project scope limitations, the following tests were not fully implemented:
