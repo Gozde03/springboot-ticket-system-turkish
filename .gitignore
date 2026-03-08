@@ -34,3 +34,4 @@ build/
 target/
 .DS_Store
 *.log
+.metadata/
