@@ -112,15 +112,15 @@ The testing process followed the **Software Testing Life Cycle (STLC)**:
 ## Project Structure
 src
 ├── main
-
-│ ├── java
-
-│ └── resources
-
-│ ├── static
-
-│ └── templates
-
+│   ├── java
+│   └── resources
+│       ├── static
+│       │   ├── css
+│       │   ├── js
+│       │   └── img
+│       └── templates
+│           ├── layout
+│           └── pages
 └── test
 
 ## Limitations
