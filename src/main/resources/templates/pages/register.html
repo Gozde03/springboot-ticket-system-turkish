@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="content" class="auth-center register-dark">
+
+  <h1>Yeni Kullanıcı Kaydı</h1>
+
+  <form th:action="@{/register}" method="post" class="register-container">
+    <label>Kullanıcı Adı:</label>
+    <input type="text" name="username" required />
+
+    <label>Email:</label>
+    <input type="email" name="email" required />
+
+    <label>Şifre:</label>
+    <input type="password" name="password" required />
+
+    <button type="submit">Kayıt Ol</button>
+
+    <p class="error-text" th:if="${error}" th:text="${error}"></p>
+
+    <div class="auth-links">
+      <span>Zaten hesabın var mı?</span>
+      <a th:href="@{/login}">Giriş Yap</a>
+    </div>
+  </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="content" class="events-page">
+
+  <h1>Etkinlikler</h1>
+
+  <div class="events-toolbar">
+    <input id="eventSearch" type="text" placeholder="Etkinlik ara..." />
+    <select id="eventTypeFilter">
+      <option value="">Tüm Türler</option>
+      <option value="Konser">Konser</option>
+      <option value="Tiyatro">Tiyatro</option>
+      <option value="Sinema">Sinema</option>
+    </select>
+    <button id="clearFilters" type="button">Temizle</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="events-grid" id="eventsGrid"></div>
+
+  <div class="go-to-cart-container">
+    <button id="goToCart" type="button">Sepete Git</button>
+  </div>
+
+  <script>
+    window.__PAGE__ = "events";
+  </script>
+
+</div>
+</body>
+</html>

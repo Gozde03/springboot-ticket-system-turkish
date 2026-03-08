@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="content" class="cart-page">
+
+  <h1>Sepetinizdeki Etkinlikler</h1>
+
+  <div id="countdown" class="cart-countdown">
+    Sepetinizi <span id="timer">15</span> saniye içinde onaylamazsanız sepetiniz sıfırlanacak.
+  </div>
+
+  <table class="cart-table">
+    <thead>
+    <tr>
+      <th>Etkinlik Adı</th>
+      <th>Tarih & Saat</th>
+      <th>İl</th>
+      <th>Fiyat</th>
+      <th>Adet</th>
+      <th>İşlem</th>
+    </tr>
+    </thead>
+    <tbody id="cartBody">
+    <!-- JS dolduracak -->
+    </tbody>
+  </table>
+
+  <h2 id="totalPrice" class="cart-total"></h2>
+
+  <button id="confirmBtn" class="cart-confirm-btn">Sepeti Onayla</button>
+
+  <a th:href="@{/event}" class="cart-back-link" id="backToEvents">Etkinliklere Geri Dön</a>
+
+  <script>
+    window.__PAGE__ = "cart";
+  </script>
+
+</div>
+
+</body>
+</html>

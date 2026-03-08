@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="content" class="auth-center">
+
+  <h1>Giriş Yap</h1>
+
+  <div class="login-container">
+    <form th:action="@{/login}" method="post" data-form="login">
+      <label for="username">Kullanıcı Adı:</label>
+      <input type="text" id="username" name="username" autocomplete="username" required />
+
+      <label for="password">Şifre:</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required />
+
+      <button type="submit">Giriş Yap</button>
+
+      <p class="error-text" th:if="${error}" th:text="${error}"></p>
+    </form>
+
+    <div class="auth-links" style="margin-top: 16px; text-align:center;">
+      <span style="font-weight:600; color: rgb(237, 112, 45);">Hesabın yok mu?</span>
+      <a th:href="@{/register}" style="margin-left:8px; color:#6a244a; text-decoration: underline;">Kayıt Ol</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
