@@ -1,3 +1,5 @@
+Spring Boot based ticket purchasing system with comprehensive testing strategy including unit, integration, UI and end-to-end testing.
+
 # Spring Boot Ticket Purchasing System
 
 This project is a web-based **Ticket Purchasing System** developed using **Spring Boot**.  
@@ -17,7 +19,9 @@ The application follows a **layered architecture** and focuses heavily on **soft
 ## Architecture
 
 The project is designed using a **layered architecture**:
+
 Controller → Service → Repository → Database
+
 
 - **Controller Layer**
   Handles HTTP requests and user interactions.
@@ -39,7 +43,10 @@ Controller → Service → Repository → Database
 - Spring Data JPA
 - Maven
 - Thymeleaf
-- H2 In-Memory Database (for testing)
+- H2 In-Memory Database
+- JUnit 5
+- Mockito
+- Selenium WebDriver
 
 ## Testing
 
