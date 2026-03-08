@@ -110,7 +110,6 @@ The testing process followed the **Software Testing Life Cycle (STLC)**:
 6. Test Closure
 
 ## Project Structure
-
 src
 ├── main
 │ ├── java
